@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goomy Chatbot - Tu Amigo Inteligente</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="chat-header">
+        <div class="bot-avatar">
+          <img src="goomy.png" alt="Goomy Bot" class="avatar-img" />
+          <div class="status-indicator"></div>
+        </div>
+        <div class="bot-info">
+          <h1>Goomy Bot</h1>
+          <p>Tu amigo inteligente y adorable</p>
+        </div>
+      </header>
+
+      <div class="chat-container">
+        <div class="chat-messages" id="chatMessages">
+          <div class="message bot-message">
+            <div class="message-avatar">
+              <img src="goomy.png" alt="Goomy" />
+            </div>
+            <div class="message-content">
+              <p>
+                ¡Hola! Soy Goomy, tu chatbot inteligente. Mi IA me permite
+                entender contexto, analizar sentimientos y mantener
+                conversaciones profundas. ¿En qué puedo ayudarte hoy? 🧠✨
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="chat-input-container">
+          <div class="input-wrapper">
+            <input
+              type="text"
+              id="userInput"
+              placeholder="Escribe tu mensaje aquí..."
+              maxlength="500"
+            />
+            <button id="sendButton" class="send-button">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 2L11 13M22 2L15 22L11 13M22 2L2 9L11 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="quick-actions">
+            <button class="quick-btn" data-topic="tecnologia">
+              💻 Tecnología
+            </button>
+            <button class="quick-btn" data-topic="musica">🎵 Música</button>
+            <button class="quick-btn" data-topic="anime">🌸 Anime</button>
+            <button class="quick-btn" data-topic="juegos">🎮 Juegos</button>
+            <button class="quick-btn" data-topic="ciencia">🔬 Ciencia</button>
+            <button class="quick-btn" data-topic="filosofia">
+              🤔 Filosofía
+            </button>
+            <button class="quick-btn" data-topic="arte">🎨 Arte</button>
+            <button class="quick-btn" data-topic="historia">📚 Historia</button>
+            <button class="quick-btn" data-topic="psicologia">
+              🧠 Psicología
+            </button>
+            <button class="quick-btn" data-topic="economia">💰 Economía</button>
+          </div>
+        </div>
+      </div>
+
+      <footer class="chat-footer">
+        <p>Goomy Bot - Hecho con 💜 y 💚</p>
+      </footer>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
